@@ -23,6 +23,7 @@
 			visibility: hidden;
 		}
 
+
         .caption h1 {
             color: #000000;
         }
@@ -30,6 +31,15 @@
         .slide h2 {
 			color: #000000;
 		}
+
+        .slide.black h2 {
+            color: #ffffff;
+        }
+
+        .meetup-list {
+            font-size: 18px;
+            line-height: 1.75em;
+        }
     </style>
 </head>
 <body class="shower list">
@@ -50,18 +60,17 @@
         <style>
 			#cover #title {
 				position: relative;
-				bottom: -300px;
+				bottom: -350px;
 			}
 
             #cover h2 {
                 margin: 30px 0 0;
                 color: white;
                 text-align: center;
-                font-size: 70px;
+                font-size: 58px;
             }
 
             #cover p {
-                margin: 10px 0 0;
                 text-align: center;
                 color: white;
                 font-style: italic;
@@ -72,10 +81,6 @@
                 color: white;
             }
 
-            .meetup-list {
-                font-size: 18px;
-                line-height: 1.75em;
-            }
         </style>
         <!--TODO Оформить кавер -->
     </section>
@@ -137,7 +142,7 @@
         <!--TODO квадраты-->
     </section>
 
-    <section class="slide">
+    <section class="slide black">
         <h2 class="shout">Площадка</h2>
     </section>
 
@@ -169,28 +174,35 @@
         </figure>
     </section>
 
-    <section class="slide">
+    <section class="slide black">
         <h2 class="shout">Программа</h2>
     </section>
 
-    <section class="slide">
-        <!--TODO доклады -->
+    <section class="slide black">
+        <figure>
+            <img src="pictures/talk.jpg"
+                 alt="Доклады: Артем Малышев на Python Meetup Chelyabinsk #5"
+                 class="cover">
+        </figure>
+    </section>
+
+    <section class="slide black">
+        <figure>
+            <img src="pictures/talk.jpg"
+                 alt="Дринкапы: BeerJS #4"
+                 class="cover">
+        </figure>
     </section>
 
     <section class="slide">
-        <!--TODO дринкапы -->
+        <h2 class="shout">Где искать докладчиков</h2>
     </section>
 
     <section class="slide">
-        <!--TODO где брать докладчиков -->
+        <h2 class="shout">Подготовка доклада</h2>
     </section>
 
-    <section class="slide">
-        <!--TODO прогоны -->
-    </section>
-
-
-    <section class="slide">
+    <section class="slide black">
         <h2 class="shout">Участники</h2>
     </section>
 
@@ -198,104 +210,108 @@
         <h2>Где искали участников</h2>
         <ul>
             <li>Друзья и коллеги</li>
-            <li>Соискатели</li>
-            <li>Гитхаб</li>
-            <li>Локальные IT-чаты в телеграме</li>
-            <li>Группы вузов в ВК</li>
-            <li>Календари IT-мероприятий</li>
-            <li>Сообщества в других городах</li>
+            <li class="next">Соискатели</li>
+            <li class="next">Гитхаб</li>
+            <li class="next">Локальные IT-чаты в телеграме</li>
+            <li class="next">Группы вузов в ВК</li>
+            <li class="next">Календари IT-мероприятий</li>
+            <li class="next">Сообщества в других городах</li>
         </ul>
         <!--TODO Иконочки-->
     </section>
 
     <section class="slide">
-        <h2>Ловим участников</h2>
+        <h2>Организуем пространство для участников</h2>
         <ul>
             <li>Таймпад</li>
-            <li>ВК, Фейсбук, Твиттер</li>
-            <li>Телеграм</li>
+            <li class="next">ВК, Фейсбук, Твиттер</li>
+            <li class="next">Телеграм</li>
         </ul>
         <!--TODO оформить-->
     </section>
 
-    <section class="slide">
-        <h2 class="shout">Реклама в соцсетях</h2>
-        <!-- TODO скрин с ютуба (или не с ютуба) -->
+    <section class="slide black">
+        <figure>
+            <img src="pictures/youtube.jpg"
+                 alt="Реклама в соцсетях: ютуб"
+                 class="cover">
+        </figure>
     </section>
 
     <section class="slide">
-        <h2 class="shout">Show rate</h2>
+        <h2 class="shout">No-show rate</h2>
     </section>
 
     <section class="slide">
-        <h2 class="shout">Выбор даты</h2>
+        <h2 class="shout">Когда?</h2>
+    </section>
+
+    <section class="slide black">
+        <h2 class="shout">Всё остальное</h2>
     </section>
 
     <section class="slide">
         <h2>Всё остальное</h2>
-        <ul>
+        <ul style="line-height: 1.5em; font-size: 32px;">
             <li>Пицца</li>
             <li>Наклейки</li>
-            <li>Розыгрыши</li>
             <li>Видеосъемка</li>
+            <li>Трансляция</li>
             <li>Фотографии</li>
+            <li>Розыгрыши</li>
             <li>Музыка</li>
             <li>Веселый ведущий</li>
         </ul>
     </section>
 
-    <section class="slide">
-        <h2 class="shout">Подготовка заняла X времени</h2>
+    <section class="slide black">
+        <figure>
+            <img src="pictures/meetup-1.jpg"
+                 alt="Первый митап: тусовка"
+                 class="cover">
+        </figure>
     </section>
 
     <section class="slide">
-        <h2 class="shout">Фоточки с митапа</h2>
+        <h2>Статистика первого митапа</h2>
+        <p>Ожидание: 25-30 человек</p>
+        <p class="next">Реальность: 92 регистрации, 65-70 человек</p>
+    </section>
+
+    <section class="slide black">
+        <figure>
+            <img src="pictures/feedback.png"
+                 alt="Первый митап: фидбек"
+                 class="cover">
+        </figure>
+    </section>
+
+    <section class="slide black">
+        <figure>
+            <img src="pictures/feedback-form.png"
+                 alt="Первый митап: фидбек"
+                 class="cover">
+        </figure>
+    </section>
+
+    <!--<section class="slide">-->
+        <!--<h2 class="shout">С тех пор провели еще 5</h2>-->
+    <!--</section>-->
+
+    <section class="slide">
+        <h2 class="shout">Зачем нужно сообщество?</h2>
     </section>
 
     <section class="slide">
-        <h2 class="shout">Отзывы из телеграма</h2>
+        <h2 class="shout">Зачем сообщества компаниям?</h2>
     </section>
 
     <section class="slide">
-        <h2 class="shout">Статистика первого митапа: ожидания и реальность</h2>
+        <h2 class="shout">Зачем сообщества организаторам?</h2>
     </section>
 
     <section class="slide">
-        <h2 class="shout">После митапа: фидбек и ютуб</h2>
-    </section>
-
-    <section class="slide">
-        <h2 class="shout">С тех пор провели еще 5</h2>
-    </section>
-
-    <section class="slide">
-        <h2 class="shout">Зачем мы это делаем?</h2>
-    </section>
-
-    <section class="slide">
-        <h2>Зачем сообщество компании?</h2>
-        <ul>
-            <li>HR-бренд</li>
-            <li>Найм</li>
-            <li>Развитие сотрудников</li>
-        </ul>
-    </section>
-
-    <section class="slide">
-        <h2>Зачем сообщество организаторам?</h2>
-        <ul>
-            <li>Прокачка софт-скиллов</li>
-            <li>Нетворкинг</li>
-        </ul>
-    </section>
-
-    <section class="slide">
-        <h2>Зачем сообщество городу?</h2>
-        <ul>
-            <li>Развитие участников сообщества</li>
-            <li>Привлечение новых людей</li>
-            <li>Причина не уезжать</li>
-        </ul>
+        <h2 class="shout">Зачем сообщества участникам?</h2>
     </section>
 
     <section class="slide">
