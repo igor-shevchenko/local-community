@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Как запустить локальное сообщество</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="shower/themes/ribbon/styles/styles.css">
+    <style>
+        .shower {
+            --slide-ratio: calc(16 / 9);
+        }
+
+        .shower.list {
+			background: url(style/texture.png); /* pattern from https://www.toptal.com/designers/subtlepatterns/seamless-paper-texture/ */
+		}
+
+        .slide {
+			font-size: 35px;
+			line-height: 1.75em;
+		}
+
+		.slide::after {
+			visibility: hidden;
+		}
+
+
+        .caption h1 {
+            color: #000000;
+        }
+
+        .slide h2 {
+			color: #000000;
+		}
+
+        .slide.black h2 {
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body class="shower list">
+
+	<header class="caption">
+		<h1>Как запустить локальное сообщество</h1>
+		<p><a href="http://igorshevchenko.ru">Игорь Шевченко</a>, <a href="https://antidasoftware.com/">Antida software</a></p>
+	</header>
+
+    <section class="slide black" id="cover">
+		<div id="title">
+			<h2>Как запустить локальное сообщество</h2>
+			<p><a href="http://igorshevchenko.ru">Игорь Шевченко</a>, <a href="https://antidasoftware.com/">Antida software</a></p>
+		</div>
+        <figure>
+            <img class="cover" src="pictures/cover.jpg">
+        </figure>
+        <style>
+			#cover #title {
+				position: relative;
+				bottom: -350px;
+			}
+
+            #cover h2 {
+                margin: 30px 0 0;
+                color: white;
+                text-align: center;
+                font-size: 58px;
+            }
+
+            #cover p {
+                text-align: center;
+                color: white;
+                font-style: italic;
+                font-size: 20px;
+            }
+
+            #cover p a {
+                color: white;
+            }
+
+        </style>
+    </section>
+
+    <section class="slide">
+        <h2>Обо мне</h2>
+        <p>Живу в Челябинске</p>
+        <p>Работаю тимлидом в Antida software</p>
+        <p>Организую Python Meetup Chelyabinsk и BeerJS Chelyabinsk</p>
+    </section>
+
+    <section class="slide">
+        <h2>Python Meetup Chelyabinsk</h2>
+        <p>Появился в <mark>2017</mark> году</p>
+        <p><mark>7</mark> митапов за два года</p>
+        <p><mark>40–100</mark> человек на митапе</p>
+        <p><mark>≈600</mark> человек в сообществе</p>
+    </section>
+
+    <section class="slide black">
+        <figure>
+            <img src="pictures/stepan-python.jpg"
+                 alt="Как выглядят Python-митапы"
+                 class="cover">
+        </figure>
+    </section>
+
+    <section class="slide">
+        <h2>BeerJS Chelyabinsk</h2>
+        <p>Появился в <mark>2018</mark> году</p>
+        <p><mark>5</mark> встреч за полтора года</p>
+        <p><mark>10–20</mark> человек на дринкапе</p>
+        <p><mark>≈60</mark> человек в сообществе</p>
+    </section>
+
+    <section class="slide black">
+        <figure>
+            <img src="pictures/drinkup.jpg"
+                 alt="Как выглядят BeerJS"
+                 class="cover">
+        </figure>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout" style="font-size: 70px;">
+            Python-митапы: обмен знаниями
+            <br>
+            BeerJS: встреча с друзьями
+        </h2>
+    </section>
+
+    <section class="slide black">
+        <h2 class="shout">Как появился Python Meetup Chelyabinsk</h2>
+    </section>
+
+    <section class="slide">
+        <h2>События в Челябинске</h2>
+        <div class="half-slide">
+            <p>2019</p>
+            <ul class="meetup-list">
+                <li>UWDC</li>
+                <li>#Sysadminka</li>
+                <li>Python Meetup Chelyabinsk</li>
+                <li>Корпус</li>
+                <li>Java-встречи</li>
+                <li>BeerJS</li>
+                <li>IT.IS</li>
+                <li>QAday</li>
+                <li>Kubernetes Meetup Chelyabinsk</li>
+                <li>FRONTday</li>
+                <li>BXMeetup</li>
+                <li>Обеды разработчиков игр</li>
+            </ul>
+        </div>
+        <div class="half-slide next">
+            <p>2017</p>
+            <ul class="meetup-list">
+                <li>UWDC</li>
+                <li>#Sysadminka</li>
+                <li>FRONTday</li>
+                <li>JUG.CHEL</li>
+                <li>Обеды разработчиков игр</li>
+            </ul>
+        </div>
+        <style>
+            .half-slide {
+                width: 50%;
+                position: absolute;
+                margin-top: -0.5em;
+            }
+
+            .half-slide:last-of-type {
+                left: 50%;
+            }
+
+            .slide ul.meetup-list {
+                margin-top: -1.5em;
+                font-size: 16px;
+                line-height: 1.75em;
+            }
+        </style>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">Python-сообщество</h2>
+        <!-- Нам захотелось, чтобы в городе было Python-сообщество -->
+    </section>
+
+    <section class="slide">
+        <h2>Зачем нужно сообщество питонистов?</h2>
+        <p class="next">Python классный!</p>
+        <p class="next">... но в Челябинске про него ничего не было слышно</p>
+    </section>
+
+    <section class="slide">
+        <h2>Зачем нужно сообщество питонистов?</h2>
+        <ul>
+            <li>Познакомиться с другими питонистами</li>
+            <li>Сделать рынок прозрачнее</li>
+            <li>Показать начинающим разработчикам, что Python — хороший карьерный выбор</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">Мы решили организовать его сами</h2>
+    </section>
+
+    <section class="slide">
+        <h2>Организаторы</h2>
+        <img src="pictures/stepan.jpg" alt="Степан Родионов" style="width: 250px;">
+        <img src="pictures/igor.jpg" alt="Игорь Шевченко" style="width: 250px;">
+        <img src="pictures/antida.jpg" alt="Antida software" style="width: 250px;">
+    </section>
+
+    <section class="slide">
+        <h2>Чем занимаются сообщества?</h2>
+        <ul class="next" style="font-size: 32px; line-height: 1.5em;">
+            <li>Митапы</li>
+            <li>Дринкапы</li>
+            <li>Конференции</li>
+            <li>Обучающие курсы</li>
+            <li>Чаты</li>
+            <li>Статьи</li>
+            <li>Подкасты</li>
+            <li>Опенсорс-проекты</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Чем занимаются сообщества?</h2>
+        <ul style="font-size: 32px; line-height: 1.5em;">
+            <li style="font-weight: bold">Митапы</li>
+            <li>Дринкапы</li>
+            <li>Конференции</li>
+            <li>Обучающие курсы</li>
+            <li>Чаты</li>
+            <li>Статьи</li>
+            <li>Подкасты</li>
+            <li>Опенсорс-проекты</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Составляющие митапа</h2>
+        <ul>
+            <li>Площадка</li>
+            <li>Программа</li>
+            <li>Участники</li>
+            <li>Всё остальное</li>
+        </ul>
+    </section>
+
+    <section class="slide black">
+        <h2 class="shout">Площадка</h2>
+    </section>
+
+    <section class="slide black">
+        <a href="https://www.facebook.com/photo.php?fbid=2155997301139942">
+            <figure>
+                <img src="pictures/domclick.jpg"
+                     alt="Бесплатные залы: Moscow Python Meetup #57 в Domclick"
+                     class="cover">
+            </figure>
+        </a>
+    </section>
+
+    <section class="slide black">
+        <a href="https://vk.com/wall-164218720_5">
+            <figure>
+                <img src="pictures/hoppy-mondays.jpg"
+                     alt="Условно-бесплатные залы: BeerJS Chelyabinsk #2 в Hoppy Mondays"
+                     class="cover">
+            </figure>
+        </a>
+    </section>
+
+    <section class="slide black">
+        <figure>
+            <img src="pictures/meetup-3.jpg"
+                 alt="Платные: Python Meetup Chelyabinsk #3 в Челябинск-сити"
+                 class="cover">
+        </figure>
+    </section>
+
+    <section class="slide black">
+        <h2 class="shout">Программа</h2>
+    </section>
+
+    <section class="slide black">
+        <figure>
+            <img src="pictures/talk.jpg"
+                 alt="Доклады: Артем Малышев на Python Meetup Chelyabinsk #5"
+                 class="cover">
+        </figure>
+    </section>
+
+    <section class="slide black">
+        <figure>
+            <img src="pictures/drinkup-talk.jpg"
+                 alt="Общение: BeerJS #3"
+                 class="cover">
+        </figure>
+    </section>
+
+    <section class="slide">
+        <h2>Где искать докладчиков</h2>
+        <ul>
+            <li class="next">В компании</li>
+            <li class="next">Call for papers</li>
+            <li class="next">Привозить из других городов</li>
+            <li class="next">Дальше сложно</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">Подготовка доклада</h2>
+    </section>
+
+    <section class="slide black">
+        <h2 class="shout">Участники</h2>
+    </section>
+
+    <section class="slide">
+        <h2>Где искать участников</h2>
+        <ul style="font-size: 34px; line-height: 1.5em;">
+            <li>Друзья и коллеги</li>
+            <li class="next">Соискатели</li>
+            <li class="next">Гитхаб</li>
+            <li class="next">Календари IT-мероприятий</li>
+            <li class="next">Локальные IT-чаты в телеграме</li>
+            <li class="next">Группы университетов в ВК</li>
+            <li class="next">Сообщества в других городах</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Организуем пространство для участников</h2>
+        <ul>
+            <li>Таймпад</li>
+            <li class="next">ВК, Фейсбук, Твиттер</li>
+            <li class="next">Телеграм</li>
+        </ul>
+    </section>
+
+    <!--<section class="slide black">-->
+        <!--<figure>-->
+            <!--<img src="pictures/youtube.jpg"-->
+                 <!--alt="Реклама в соцсетях: ютуб"-->
+                 <!--class="cover">-->
+        <!--</figure>-->
+    <!--</section>-->
+
+    <!--<section class="slide">-->
+        <!--<h2 class="shout">No-show rate</h2>-->
+    <!--</section>-->
+
+    <!--<section class="slide">-->
+        <!--<h2 class="shout">Когда?</h2>-->
+    <!--</section>-->
+
+    <section class="slide black">
+        <h2 class="shout">Всё остальное</h2>
+    </section>
+
+    <section class="slide">
+        <h2>Всё остальное</h2>
+        <ul style="line-height: 1.5em; font-size: 32px;">
+            <li>Пицца</li>
+            <li>Наклейки</li>
+            <li>Видеосъемка</li>
+            <li>Трансляция</li>
+            <li>Фотографии</li>
+            <li>Розыгрыши</li>
+            <li>Музыка</li>
+            <li>Афтепати</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Всё остальное</h2>
+        <ul style="line-height: 1.5em; font-size: 32px;">
+            <li style="font-weight: bold;">Пицца</li>
+            <li>Наклейки</li>
+            <li style="font-weight: bold;">Видеосъемка</li>
+            <li>Трансляция</li>
+            <li>Фотографии</li>
+            <li>Розыгрыши</li>
+            <li>Музыка</li>
+            <li>Афтепати</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Всё остальное</h2>
+        <ul style="line-height: 1.5em; font-size: 32px;">
+            <li style="font-weight: bold;">Пицца</li>
+            <li style="font-weight: bold;">Наклейки</li>
+            <li style="font-weight: bold;">Видеосъемка</li>
+            <li>Трансляция</li>
+            <li style="font-weight: bold;">Фотографии</li>
+            <li style="font-weight: bold;">Розыгрыши</li>
+            <li>Музыка</li>
+            <li style="font-weight: bold;">Афтепати</li>
+        </ul>
+    </section>
+
+    <section class="slide black">
+        <h2 class="shout">Результат</h2>
+    </section>
+
+    <section class="slide">
+        <h2>Статистика первого митапа</h2>
+        <p>Ожидание: <mark>25-30</mark> человек</p>
+        <p class="next">Реальность: <mark>92</mark> регистрации, <mark>65-70</mark> человек</p>
+    </section>
+
+    <section class="slide black">
+        <figure>
+            <img src="pictures/meetup-1.jpg"
+                 alt="Первый митап: тусовка"
+                 class="cover">
+        </figure>
+    </section>
+
+    <section class="slide black">
+        <figure>
+            <img src="pictures/feedback.png"
+                 alt="Первый митап: фидбек"
+                 class="cover">
+        </figure>
+    </section>
+
+    <section class="slide black">
+        <figure>
+            <img src="pictures/feedback-form.png"
+                 alt="Первый митап: фидбек"
+                 class="cover">
+        </figure>
+    </section>
+
+    <section class="slide black">
+        <h2 class="shout">Развитие сообщества</h2>
+    </section>
+
+    <section class="slide">
+        <h2>Развитие 2017 → 2019</h2>
+        <ul>
+            <li class="next">Мастер-классы</li>
+            <li class="next">Докладчики из других городов</li>
+            <li class="next">Дринкапы</li>
+            <li class="next">Курс по Python</li>
+            <li class="next">Расширение команды</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Развитие 2019 → ...</h2>
+        <ul>
+            <li class="next">Маленькие митапы</li>
+            <li class="next">Конференция</li>
+            <li class="next">Курс по Python</li>
+        </ul>
+    </section>
+
+    <section class="slide black">
+        <h2 class="shout">Почему сообщество живет?</h2>
+    </section>
+
+    <section class="slide">
+        <h2>Зачем сообщества компаниям?</h2>
+        <ul>
+            <li class="next">HR-бренд</li>
+            <li class="next">Развитие специалистов в городе</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Зачем сообщества организаторам?</h2>
+        <ul>
+            <li class="next">Личный бренд</li>
+            <li class="next">Развитие софт-скиллов</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Зачем сообщества участникам?</h2>
+        <ul>
+            <li class="next">Знания</li>
+            <li class="next">Знакомства</li>
+            <li class="next">Мотивация</li>
+        </ul>
+    </section>
+
+    <section class="slide black">
+        <h2 class="shout">Организуйте!</h2>
+    </section>
+
+    	<section class="slide">
+		<h2>Вопросы?</h2>
+		<div class="at-bottom">
+			<p>
+				Слайды: <a href="https://igor-shevchenko.github.io/local-community">https://igor-shevchenko.github.io/local-community</a>
+				<br>
+                Сообщество: <a href="https://vk.com/pychel">vk.com/pychel</a>
+				<br>
+				Почта: <a href="mailto:mail@igorshevchenko.ru">mail@igorshevchenko.ru</a>
+				<br>
+				Телеграм: <a href="https://t.me/igor_shevchenko" class="low-underline">@igor_shevchenko</a>
+			</p>
+		</div>
+		<style>
+			.low-underline {
+				padding-bottom: 5px;
+			}
+			.at-bottom {
+				position: absolute;
+				bottom: 0;
+				font-size: 30px;
+			}
+		</style>
+	</section>
+
+    <script src="shower/shower.min.js"></script>
+
+</body>
+</html>
